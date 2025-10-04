@@ -8,7 +8,7 @@ class gitHubAPI {
       {
         headers: {
           Authorization:
-            "Bearer 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",
+            "Bearer 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",
           Accept: "application/vnd.github.v3+json",
           "X-GitHub-Api-Version": "2022-11-28",
         },
@@ -83,4 +83,5 @@ autocompleteListEl.addEventListener("click", (e) => {
     autocompleteListEl.innerHTML = "";
   }
 });
+
 
