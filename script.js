@@ -5,14 +5,6 @@ class gitHubAPI {
   async getReps(query = "") {
     const response = await fetch(
       this.BASE_URL + "/search/repositories?q=" + query,
-      {
-        headers: {
-          Authorization:
-            "Bearer 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",
-          Accept: "application/vnd.github.v3+json",
-          "X-GitHub-Api-Version": "2022-11-28",
-        },
-      }
     );
     const data = await response.json();
     return data;
@@ -83,5 +75,6 @@ autocompleteListEl.addEventListener("click", (e) => {
     autocompleteListEl.innerHTML = "";
   }
 });
+
 
 
